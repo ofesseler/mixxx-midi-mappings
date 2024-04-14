@@ -191,12 +191,12 @@
             </control>
             <control>
                 <group>[EffectRack1_EffectUnit1_Effect1]</group>
-                <key>meta</key>
-                <description>MIDI Learned from 411 messages.</description>
+                <key>Faderfox_DJ3.meta</key>
+                <description>modified_by_oli</description>
                 <status>0xB3</status>
                 <midino>0x20</midino>
                 <options>
-                    <selectknob/>
+                    <script-binding/>
                 </options>
             </control>
             <control>

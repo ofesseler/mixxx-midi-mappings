@@ -4,6 +4,7 @@ Faderfox_DJ3.knob_right_lim = 10
 Faderfox_DJ3.knob_left_lim  = 117
 Faderfox_DJ3.volume_step = 0.2
 Faderfox_DJ3.mix_step = 0.1
+Faderfox_DJ3.effect_step = 0.05
 Faderfox_DJ3.button_press = 0x93
 Faderfox_DJ3.button_release = 0x83
 Faderfox_DJ3.shiftcue_press = 0xb3
@@ -300,4 +301,14 @@ Faderfox_DJ3.calculate_loop_end = function ( group, loop_beats ) {
 Faderfox_DJ3.nosync = function ( value ) {
     midi.sendShortMsg ( 0x93, 0x58, 0x00 );
     midi.sendShortMsg ( 0x93,0x5c,0x00 );
+}
+
+// Custom functions 
+
+Faderfox_DJ3.meta = function(channel,control,value){
+    group = "[EffectRack1_EffectUnit1_Effect1]"
+    key =  "meta"
+    Faderfox_DJ3.rotary_continuous (
+        "[EffectRack1_EffectUnit1_Effect1]", "meta",
+            value, Faderfox_DJ3.effect_step, 0, 1 );
 }
