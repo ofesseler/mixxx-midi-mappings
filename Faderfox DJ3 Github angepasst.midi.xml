@@ -5,7 +5,7 @@
     </info>
     <controller id="Faderfox">
         <scriptfiles>
-            <file functionprefix="Faderfox_DJ3" filename="Faderfox-DJ3-scripts.js"/>
+            <file filename="Faderfox-DJ3-scripts.js" functionprefix="Faderfox_DJ3"/>
         </scriptfiles>
         <controls>
             <control>
@@ -191,7 +191,7 @@
             </control>
             <control>
                 <group>[EffectRack1_EffectUnit1_Effect1]</group>
-                <key>Faderfox_DJ3.meta</key>
+                <key>Faderfox_DJ3.meta_fx1_1</key>
                 <description>modified_by_oli</description>
                 <status>0xB3</status>
                 <midino>0x20</midino>
@@ -219,22 +219,22 @@
             </control>
             <control>
                 <group>[EffectRack1_EffectUnit1_Effect2]</group>
-                <key>meta</key>
+                <key>Faderfox_DJ3.meta_fx1_2</key>
                 <description>MIDI Learned from 258 messages.</description>
                 <status>0xB3</status>
                 <midino>0x21</midino>
                 <options>
-                    <selectknob/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
                 <group>[EffectRack1_EffectUnit1_Effect3]</group>
-                <key>meta</key>
+                <key>Faderfox_DJ3.meta_fx1_3</key>
                 <description>MIDI Learned from 224 messages.</description>
                 <status>0xB3</status>
                 <midino>0x22</midino>
                 <options>
-                    <selectknob/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
@@ -248,12 +248,12 @@
             </control>
             <control>
                 <group>[EffectRack1_EffectUnit1]</group>
-                <key>mix</key>
-                <description>MIDI Learned from 218 messages.</description>
+                <key>Faderfox_DJ3.mix_fx_1</key>
+                <description>MIDI Learned from 813 messages.</description>
                 <status>0xB3</status>
                 <midino>0x23</midino>
                 <options>
-                    <selectknob/>
+                    <script-binding/>
                 </options>
             </control>
             <control>

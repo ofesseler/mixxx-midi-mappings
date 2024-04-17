@@ -305,10 +305,26 @@ Faderfox_DJ3.nosync = function ( value ) {
 
 // Custom functions 
 
-Faderfox_DJ3.meta = function(channel,control,value){
+Faderfox_DJ3.meta_fx1_1 = function(channel,control,value){
     group = "[EffectRack1_EffectUnit1_Effect1]"
     key =  "meta"
-    Faderfox_DJ3.rotary_continuous (
-        "[EffectRack1_EffectUnit1_Effect1]", "meta",
-            value, Faderfox_DJ3.effect_step, 0, 1 );
+    Faderfox_DJ3.rotary_continuous ( group, key, value, Faderfox_DJ3.effect_step, 0, 1 );
+}
+
+Faderfox_DJ3.meta_fx1_2 = function(channel,control,value){
+    group = "[EffectRack1_EffectUnit1_Effect2]"
+    key =  "meta"
+    Faderfox_DJ3.rotary_continuous ( group, key, value, Faderfox_DJ3.effect_step, 0, 1 );
+}
+
+Faderfox_DJ3.meta_fx1_3 = function(channel,control,value){
+    group = "[EffectRack1_EffectUnit1_Effect3]"
+    key =  "meta"
+    Faderfox_DJ3.rotary_continuous ( group, key, value, Faderfox_DJ3.effect_step, 0, 1 );
+}
+
+Faderfox_DJ3.mix_fx_1 = function(channel,control,value){
+    group = "[EffectRack1_EffectUnit1]"
+    key =  "mix"
+    Faderfox_DJ3.rotary_continuous ( group, key, value, Faderfox_DJ3.effect_step, 0, 1 );
 }
